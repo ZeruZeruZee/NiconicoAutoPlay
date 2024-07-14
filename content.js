@@ -22,12 +22,12 @@ function waitForVideoEnd() {
 	}
 	
 	video.addEventListener('ended', () => {
-
+		const firstRecommendation = document.querySelector('.p_48px_0_0 ul > li:first-child a');
 		console.log('Next');
 		if (firstRecommendation) {
 			firstRecommendation.click();
 		}
 	});
 }
-// 初期化
+
 waitForVideoEnd();
