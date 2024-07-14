@@ -1,0 +1,14 @@
+{
+    "name": "ニコニコ自動再生",
+    "description": "ニコニコ動画で自動再生",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "content_scripts": [
+    {
+        "matches": ["*://www.nicovideo.jp/watch_tmp/*"],
+        "js": ["content.js"]
+    }
+    ]
+}
+
